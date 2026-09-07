@@ -1,0 +1,36 @@
+{
+  "name": "erfan-portfolio",
+  "version": "1.0.0",
+  "description": "Erfan's Personal Portfolio — Full-Stack Developer & Poster Draftsman",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "optimize": "node scripts/optimize-images.mjs"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "graphic-design",
+    "swiss-style",
+    "awwwards",
+    "gsap",
+    "lenis",
+    "tailwind"
+  ],
+  "author": "Erfan",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.4.1",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26"
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0E0E0E] text-[#F6F3EC]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Signal Disrupted | Erfan</title>
+    <meta name="description" content="404 Page Not Found — The requested coordinate cannot be located." />
+    <meta name="theme-color" content="#0E0E0E" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=cabinet-grotesk@500,700&f[]=satoshi@400,500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #0E0E0E;
+        color: #F6F3EC;
+        font-family: 'Satoshi', -apple-system, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+      .font-display { font-family: 'Clash Display', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+      .text-vermilion { color: #FF4B21; }
+      .border-vermilion { border-color: #FF4B21; }
+      .bg-vermilion { background-color: #FF4B21; }
+      .noise-overlay {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.035;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+      .btn-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        border-radius: 9999px;
+        padding: 0.75rem 1.75rem;
+        background-color: #FF4B21;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: -0.01em;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+      .btn-pill:hover {
+        background-color: #e63d14;
+        transform: scale(1.04);
+      }
+      .crosshair {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+      }
+      .crosshair::before, .crosshair::after {
+        content: '';
+        position: absolute;
+        background: rgba(246, 243, 236, 0.3);
+      }
+      .crosshair::before { top: 7px; left: 0; width: 16px; height: 1px; }
+      .crosshair::after { top: 0; left: 7px; width: 1px; height: 16px; }
+    </style>
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Header bar -->
+    <header style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(246,243,236,0.1); padding-bottom: 1rem;" class="font-mono" style="font-size: 0.75rem;">
+      <div>
+        <span class="text-vermilion" style="font-weight: bold;">[ERROR // 404]</span>
+        <span style="opacity: 0.5; margin-left: 0.5rem;">SIGNAL_ROUTING_FAULT</span>
+      </div>
+      <div style="opacity: 0.6;">ERFAN // PORTFOLIO</div>
+    </header>
+
+    <!-- Main 404 stage -->
+    <main style="max-width: 900px; margin: auto 0; position: relative; padding: 2rem 0;">
+      <div style="font-size: clamp(4rem, 15vw, 12rem); line-height: 0.85; font-weight: 700; letter-spacing: -0.04em;" class="font-display">
+        <span>404</span><span class="text-vermilion">.</span>
+      </div>
+
+      <h1 class="font-display" style="font-size: clamp(1.5rem, 4vw, 3rem); text-transform: uppercase; margin: 1.5rem 0 1rem 0; letter-spacing: -0.02em;">
+        Coordinate Unreachable
+      </h1>
+
+      <p style="font-size: 1.125rem; color: rgba(246, 243, 236, 0.75); max-width: 50ch; line-height: 1.6; margin-bottom: 2rem;">
+        The requested packet sequence or route does not exist within this host topology. Return to the primary transmission terminal.
+      </p>
+
+      <div>
+        <a href="/" class="btn-pill">
+          <span>RETURN TO HOMEPAGE</span>
+          <span style="width: 1.5rem; height: 1.5rem; border-radius: 9999px; background: rgba(0,0,0,0.2); display: inline-flex; align-items: center; justify-content: center;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="display: flex; justify-content: space-between; border-top: 1px solid rgba(246,243,236,0.1); padding-top: 1rem; font-size: 0.75rem; opacity: 0.5;" class="font-mono">
+      <span>CHASSIS: ERFAN-DEV</span>
+      <span>STATUS: 404 NOT FOUND</span>
+    </footer>
+  </body>
+</html>
