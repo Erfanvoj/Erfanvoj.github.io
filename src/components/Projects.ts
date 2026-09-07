@@ -339,7 +339,7 @@ function renderPlaceholderProjectCard(project: typeof projectsData[0]): string {
             <p class="font-mono text-[11px] text-paper/50 max-w-[28ch]">
               Erfan's upcoming open-source library or tool.
             </p>
-            <a href="https://github.com/erfanvoj" target="_blank" rel="noopener noreferrer" class="mt-4 px-4 py-2 rounded-full bg-white/5 hover:bg-vermilion hover:text-white text-xs font-mono text-paper transition-all">
+            <a href="https://github.com/Erfanvoj" target="_blank" rel="noopener noreferrer" class="mt-4 px-4 py-2 rounded-full bg-white/5 hover:bg-vermilion hover:text-white text-xs font-mono text-paper transition-all">
               EXPLORE @ERFANVOJ ↗
             </a>
           </div>

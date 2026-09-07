@@ -103,12 +103,12 @@ export function renderContact(): string {
                 GitHub
               </h3>
               <p class="font-mono text-xs md:text-sm text-paper/80 mt-1 select-all">
-                github.com/erfanvoj
+                github.com/Erfanvoj
               </p>
             </div>
 
             <div class="flex flex-col gap-2.5 pt-4 border-t border-white/10">
-              <a href="https://github.com/erfanvoj" target="_blank" rel="noopener noreferrer" class="btn-pill bg-white/5 hover:bg-vermilion hover:text-white text-paper text-xs font-bold justify-between border border-white/10 transition-colors">
+              <a href="https://github.com/Erfanvoj" target="_blank" rel="noopener noreferrer" class="btn-pill bg-white/5 hover:bg-vermilion hover:text-white text-paper text-xs font-bold justify-between border border-white/10 transition-colors">
                 <span>BROWSE REPOSITORIES</span>
                 <span class="icon-bubble bg-white/10 text-paper">
                   ${Icons.github('w-3.5 h-3.5')}

@@ -171,6 +171,6 @@ To add or modify projects, edit `src/data/projects.ts` with your repository deta
 
 ## ✦ Contact / Identity Reference
 
-- **GitHub:** [https://github.com/erfanvoj](https://github.com/erfanvoj)
+- **GitHub:** [https://github.com/Erfanvoj](https://github.com/Erfanvoj)
 - **Email:** [Erfanchess450@gmail.com](mailto:Erfanchess450@gmail.com)
 - **Telegram:** [@Peaceful_God](https://t.me/Peaceful_God)

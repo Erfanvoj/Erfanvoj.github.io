@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
       'Zero Content-Script Footprint: Bypasses window-level prototype tampering inspections.'
     ],
     techStack: ['Manifest V3', 'TypeScript', 'WebExtensions API', 'DOM Heuristics', 'Chromium Internals'],
-    githubUrl: 'https://github.com/erfanvoj',
+    githubUrl: 'https://github.com/Erfanvoj',
     liveDemoUrl: '#demo-ghostblock',
     imageWebp: '/assets/project_ghostblock.webp',
     imageJpg: '/assets/project_ghostblock.jpg',
@@ -55,7 +55,7 @@ export const projectsData: Project[] = [
       'Zero Network Overhead: Transmits fully isolated from TCP/IP, cellular, or RF spectrum eavesdropping.'
     ],
     techStack: ['TypeScript', 'Vite', 'Fountain Codes (LT)', 'Computer Vision', 'Canvas API', 'WebRTC'],
-    githubUrl: 'https://github.com/erfanvoj',
+    githubUrl: 'https://github.com/Erfanvoj/rgb-file-transfer',
     liveDemoUrl: 'https://rgb-file-transfer.netlify.app',
     imageWebp: '/assets/project_rgb_airgap.webp',
     imageJpg: '/assets/project_rgb_airgap.jpg',
@@ -76,7 +76,7 @@ export const projectsData: Project[] = [
       'Bilingual Cultural Music Supervision: Context-aware prompt engineering tuned for English and Persian musical nuances with strict Latin query formatting.'
     ],
     techStack: ['Python 3.12', 'aiogram 3.x', 'Google GenAI SDK', 'Gemini 3.5 Flash', 'Pydantic v2', 'aiohttp', 'Docker'],
-    githubUrl: 'https://github.com/erfanvoj/HearThisPic',
+    githubUrl: 'https://github.com/Erfanvoj/HearThisPic',
     liveDemoUrl: 'https://t.me/HearThisPicBot',
     imageWebp: '/assets/project_hearthispic.webp',
     imageJpg: '/assets/project_hearthispic.jpg',
