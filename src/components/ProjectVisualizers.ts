@@ -2,9 +2,12 @@ export function renderGhostblockDemo(): string {
   return `
     <div id="demo-ghostblock" class="my-6 rounded-2xl bg-[#0A0A0A] border border-white/10 p-5 font-mono text-xs overflow-hidden">
       <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-3">
-        <div class="flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-vermilion"></span>
-          <span class="font-bold text-paper text-[11px] tracking-wider uppercase">Ghostblock MV3 Live Telemetry Simulator</span>
+        <div class="flex items-center gap-2.5">
+          <picture>
+            <source srcset="/assets/project_ghostblock_logo.webp" type="image/webp" />
+            <img src="/assets/project_ghostblock_logo.png" alt="GhostBlock" class="w-4 h-4 rounded-full object-contain" width="16" height="16" />
+          </picture>
+          <span class="font-bold text-paper text-[11px] tracking-wider uppercase">GhostBlock MV3 Live Telemetry Simulator</span>
         </div>
         <div class="flex items-center gap-2">
           <button id="gb-toggle-mode" type="button" class="px-3 py-1 rounded-full bg-vermilion text-white text-[11px] font-bold tracking-wider uppercase hover:bg-vermilion-hover transition-colors">

@@ -14,6 +14,7 @@ export interface Project {
   imageJpg: string | null;
   logoWebp?: string;
   logoPng?: string;
+  badgeLabel?: string;
   isPlaceholder?: boolean;
 }
 
@@ -21,23 +22,26 @@ export const projectsData: Project[] = [
   {
     id: 'ghostblock',
     index: '01',
-    title: 'Ghostblock',
-    tagline: 'Zero-Detection Manifest V3 Ad Shield',
+    title: 'GhostBlock',
+    tagline: 'Stealth Chromium Manifest V3 Ad Neutralizer',
     category: 'BROWSER SECURITY & DOM GEOMETRY',
     year: '2026',
     overview:
-      'A stealth ad-blocking engine re-engineered for Chromium’s Manifest V3 architecture. Rather than aggressively severing network requests and collapsing DOM nodes (which alerts anti-adblock detection scripts and breaks fluid layouts), Ghostblock intercepts ad vendor telemetry, synthesizes benign execution signals, and virtualizes element bounding boxes. To host websites, monetization scripts report healthy impressions while users experience a pristine, tracker-free viewport with zero layout jump.',
+      'A stealth ad-neutralizing engine re-engineered for Chromium’s Manifest V3 architecture. Rather than aggressively severing network requests and collapsing DOM nodes (which alerts anti-adblock detection scripts and locks the viewport), GhostBlock intercepts ad vendor telemetry, rewrites script requests to local mock libraries (GPT, AdSense, Prebid), spoofs element geometry in the MAIN world, accelerates and skips video ads, and auto-defuses anti-adblock modal overlays.',
     technicalHighlights: [
-      'DOM Geometry Virtualization: Preserves computed layout dimensions to prevent anti-adblock integrity tripwires.',
-      'Signature Spoofing: Generates synthetic callback telemetry matching Google AdSense, Prebid.js, and Amazon TAM.',
-      'Manifest V3 Declarative Engine: Leverages declarativeNetRequest with sub-millisecond rule evaluation latency.',
-      'Zero Content-Script Footprint: Bypasses window-level prototype tampering inspections.'
+      'MAIN-World Geometry Spoofing: Overrides layout getters (offsetHeight, getBoundingClientRect) for ad slots so page integrity checks pass.',
+      'DeclarativeNetRequest Redirects: Dynamically rewrites gpt.js, adsbygoogle.js, and prebid.js to local lightweight mock APIs.',
+      'CSS Quarantine Engine: Collapses ad containers via opacity and positioning tricks instead of display: none to satisfy offsetParent audits.',
+      'Video Ad Accelerator & Modal Defuser: Fast-forwards video ads by 16x and neutralizes full-screen anti-adblock modals via MutationObserver.'
     ],
-    techStack: ['Manifest V3', 'TypeScript', 'WebExtensions API', 'DOM Heuristics', 'Chromium Internals'],
-    githubUrl: 'https://github.com/Erfanvoj',
+    techStack: ['Manifest V3', 'TypeScript', 'declarativeNetRequest', 'Chrome Extensions API', 'DOM Geometry Spoofing', 'Vite'],
+    githubUrl: 'https://github.com/Erfanvoj/ghost-block',
     liveDemoUrl: '#demo-ghostblock',
     imageWebp: '/assets/project_ghostblock.webp',
     imageJpg: '/assets/project_ghostblock.jpg',
+    logoWebp: '/assets/project_ghostblock_logo.webp',
+    logoPng: '/assets/project_ghostblock_logo.png',
+    badgeLabel: 'CHROME EXTENSION',
   },
   {
     id: 'rgb-file-transfer',
@@ -82,5 +86,6 @@ export const projectsData: Project[] = [
     imageJpg: '/assets/project_hearthispic.jpg',
     logoWebp: '/assets/project_hearthispic_logo.webp',
     logoPng: '/assets/project_hearthispic_logo.png',
+    badgeLabel: 'TELEGRAM BOT',
   },
 ];

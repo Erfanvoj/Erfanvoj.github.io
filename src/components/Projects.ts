@@ -98,9 +98,9 @@ function renderStandardProjectCard(project: typeof projectsData[0]): string {
                 <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
                   <picture>
                     <source srcset="${project.logoWebp}" type="image/webp" />
-                    <img src="${project.logoPng || project.logoWebp}" alt="${project.title} Logo" class="w-5 h-5 rounded-full object-cover" width="20" height="20" />
+                    <img src="${project.logoPng || project.logoWebp}" alt="${project.title} Logo" class="w-5 h-5 rounded-full object-contain" width="20" height="20" />
                   </picture>
-                  <span class="font-mono text-[11px] text-white/70">TELEGRAM BOT</span>
+                  <span class="font-mono text-[11px] text-white/70">${project.badgeLabel || 'PROJECT'}</span>
                 </div>
               `
                   : ''
@@ -224,16 +224,16 @@ function renderStandardProjectCard(project: typeof projectsData[0]): string {
               </picture>
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-40 group-hover/img:opacity-10 transition-opacity"></div>
               
-              <!-- Floating Brand Emblem for HearThisPic -->
+              <!-- Floating Brand Emblem -->
               ${
                 project.logoWebp
                   ? `
                 <div class="absolute top-3 left-3 z-10 flex items-center gap-2 px-2.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/15 shadow-xl pointer-events-none">
                   <picture>
                     <source srcset="${project.logoWebp}" type="image/webp" />
-                    <img src="${project.logoPng || project.logoWebp}" alt="${project.title} Logo" class="w-5 h-5 rounded-full object-cover" width="20" height="20" />
+                    <img src="${project.logoPng || project.logoWebp}" alt="${project.title} Logo" class="w-5 h-5 rounded-full object-contain" width="20" height="20" />
                   </picture>
-                  <span class="font-mono text-[10px] text-paper/90 font-bold tracking-wider">@HearThisPicBot</span>
+                  <span class="font-mono text-[10px] text-paper/90 font-bold tracking-wider">${project.id === 'hear-this-pic' ? '@HearThisPicBot' : project.title}</span>
                 </div>
               `
                   : ''
